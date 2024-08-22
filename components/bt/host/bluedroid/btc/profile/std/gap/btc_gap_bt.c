@@ -606,6 +606,7 @@ esp_err_t btc_gap_bt_get_cod(esp_bt_cod_t *cod)
     cod->minor = p_cod.minor >> 2;
     cod->major = p_cod.major;
     cod->service = p_cod.service >> 5;
+    cod->reserved_2 = p_cod.reserved_2;
     return ESP_BT_STATUS_SUCCESS;
 }
 

@@ -585,6 +585,7 @@ static void btc_gap_bt_set_cod(btc_gap_bt_args_t *arg)
 {
     tBTA_UTL_COD p_cod;
     esp_bt_cod_t *cod = &(arg->set_cod.cod);
+    p_cod.reserved_2 = cod->reserved_2;
     p_cod.minor = cod->minor << 2;
     p_cod.major = cod->major;
     p_cod.service = cod->service << 5;

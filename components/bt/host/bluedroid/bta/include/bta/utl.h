@@ -43,6 +43,7 @@
 
 /** for utl_set_device_class() **/
 typedef struct {
+    UINT8       reserved_2;
     UINT8       minor;
     UINT8       major;
     UINT16      service;
